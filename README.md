@@ -36,3 +36,7 @@ log(true)
 ```
 > Yes
 ```
+## Issues
+1. What time is it that you would use this?
+2. Does any bugs exist maybe?
+3. Does a question or so exist of how to use this?
