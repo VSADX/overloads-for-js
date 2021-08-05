@@ -1,23 +1,31 @@
 # overloads-for-js
   
+<br>  
+  
+## How to create a function
 ```js
 import { overload } from "./overloads.js"
 
 const log = overload()
-    .for(String, str => console.log(`Text: "${str}"`))
-    .for(Number, num => console.log(`Num: #${num}))
-    .for(Boolean, bool => console.log(bool ? "Yes" : "No"))
-    
-log("Hello world")        // Text: "Hello world"
+    .if(String, str => console.log(`Text: "${str}"`))
+    .if(Number, num => console.log(`Num: #${num}))
+    .if(Boolean, bool => console.log(bool ? "Yes" : "No"))
 ```
-  
-<br>  
-  
+## What do overloads do?
 ```js
 log(4 * 3)
 ```
 ```
 > Num #12
+```
+  
+<br>  
+  
+```js
+log("Hello world")
+```
+```
+Text: "Hello world"
 ```
   
 <br>  
