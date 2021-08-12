@@ -1,4 +1,4 @@
-# overloads-for-js
+# Overloads for JS
   
 <br>  
   
@@ -37,3 +37,11 @@ log(true)
 > Yes
 ```
   
+## `.lock`
+```js
+const to_html = overload()
+    .if(Array, list => `<ul> </ul>`)
+    .if(String, text => `<p> </p>`)
+    .lock()
+    // no more `.if` functions can be added.
+```
