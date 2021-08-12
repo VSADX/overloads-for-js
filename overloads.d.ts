@@ -7,7 +7,7 @@ class Overload {
     if<A,B,C,D,E,F,FN extends(a:A,b:B,c:C,d:D,e:E,f:F)=>unknown>(a:{new():A},b:{new():B},c:{new():C},d:{new():D},e:{new():E},f:{new():F},func:FN):Overload
     if<A,B,C,D,E,F,G,FN extends(a:A,b:B,c:C,d:D,e:E,f:F,g:G)=>unknown>(a:{new():A},b:{new():B},c:{new():C},d:{new():D},e:{new():E},f:{new():F},g:{new():G},func:FN):Overload
     
-    any(fn: Function):Overload
+    else(fn: Function):Overload
 
     lock():Function
 }
