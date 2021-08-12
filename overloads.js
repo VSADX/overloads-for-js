@@ -29,7 +29,7 @@ export function overload() {
     loader.definitions = []
     loader.fallback = Overload.fallback
     loader.if = load.if
-    loader.any = load.any
+    loader.else = load.any
     loader.lock = load.lock
     loader.handleEvent = load.handleEvent
     return loader
