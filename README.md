@@ -170,7 +170,7 @@ const toHtml = overload()
 <br>  
   
 ```js
-const toHtml = overload()
+const multiNumber = overload()
     .if(Number, Number, (a, b) => a * b)
     .if(Number, Number, Number, (a, b, c) => a * b / c)
     .else((...args) => console.error("None of your parameters matched any of the cases:", args))
