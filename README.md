@@ -34,6 +34,8 @@ Since JavaScript doesn't have overloads built in, we have write the type checkin
 Type checking in JS gets more complicated because `typeof` doesn't work well on things like HTMLElements 
 for example. You might have to use `instanceof` in some places or do prototype matching. 
   
+<br>   
+  
 # Getting Started
 ## How to write an overload
   
